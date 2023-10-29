@@ -58,8 +58,8 @@ const companyProduct = async (req, res) => {
 const addToCart = async (req, res) => {
     try {
         const { productId, userId, quantity, stock, price } = req.body
-        // const user = await User.findById(userId)
-        const User = await User.findById(userId)
+        const user = await User.findById(userId)
+        // const User = await User.findById(userId)
 
 
         const find = await User.findOne({ _id: userId, 'cart.productId': productId })
