@@ -169,8 +169,8 @@ const setDecrease = async (req, res) => {
 
 
 const razorpay = new Razorpay({
-    key_id: 'rzp_test_5PB9AGsx0x9agg',
-    key_secret: '2I4UfNjZlVQfJHTcThve0TZN',
+    key_id: 'rzp_test_ZOv6e1F0ZcJNfc',
+    key_secret: 'rbY3STRdz29UJi1S38hc2vTE',
 })
 
 const newOrder = async (req, res) => {
