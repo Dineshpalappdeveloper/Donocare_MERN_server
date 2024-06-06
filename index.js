@@ -15,6 +15,7 @@ app.use(express.json())
 
 app.use('/', route)
 app.get('/', (req, res) => res.send('Hello World!'))
+
 const startconnection = async () => {
     try {
         await connectToDb(process.env.MONGO_URL)
